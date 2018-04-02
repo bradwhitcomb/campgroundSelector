@@ -13,18 +13,18 @@ var campData = [
 	{
 		name: "Cloudland",
 		image:"https://images.unsplash.com/photo-1476041800959-2f6bb412c8ce?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c85daa025ee04c951b6ac12fe3ba031a&auto=format&fit=crop&w=500&q=60",
-		description:"solo above the clouds"
+		description:"Lorem ipsum dolor amet chia knausgaard mustache selvage. Bushwick ennui dreamcatcher, master cleanse roof party shoreditch fingerstache. Ugh tumblr bushwick thundercats DIY farm-to-table. Taxidermy chartreuse franzen mustache sustainable, photo booth tote bag keffiyeh church-key street art austin chambray drinking vinegar. Migas messenger bag deep v locavore scenester. IPhone vape selvage, hella thundercats williamsburg try-hard scenester copper mug."
 	},
 	{
 	name: "happy",
 	image:"https://images.unsplash.com/photo-1465695954255-a262b0f57b40?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=06d92f647a2937af54f658e199c3d990&auto=format&fit=crop&w=500&q=60",
-	description:"solo above the clouds"
+	description:"Freegan polaroid tumeric, bitters kale chips forage XOXO prism squid subway tile roof party master cleanse tacos williamsburg. Cronut tote bag freegan, venmo vinyl drinking vinegar affogato four loko DIY. Taxidermy iPhone vegan squid whatever viral truffaut adaptogen yuccie forage wayfarers. Forage chartreuse tumeric jianbing pok pok craft beer squid godard neutra blue bottle. Neutra flexitarian venmo air plant snackwave pour-over."
 	
 	},
 	{
 	name: "wild",
 	image:"https://images.unsplash.com/photo-1471115853179-bb1d604434e0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d1c8cc988efddbda8746281871c0c8bf&auto=format&fit=crop&w=500&q=60",
-	description:"solo above the clouds"
+	description:"Tacos adaptogen blue bottle enamel pin. Small batch brunch you probably haven't heard of them disrupt try-hard health goth umami occupy. Intelligentsia marfa trust fund, paleo farm-to-table flannel knausgaard freegan roof party. Heirloom jianbing trust fund, direct trade fingerstache biodiesel pickled humblebrag af prism ramps freegan poutine thundercats cronut. Brooklyn waistcoat XOXO, tumblr fashion axe kogi iPhone pinterest trust fund af YOLO. Shaman neutra cardigan umami tote bag master cleanse palo santo tumblr. Thundercats hashtag tbh vexillologist 90's fam."
 	}
 	];
 
@@ -40,7 +40,7 @@ function seedDB(){
 			if(err) {
 				console.log(err);
 			} else {
-				console.log("added a new campground" + campInfo);
+				console.log("added a new campground");
                 Comment.create(
                     {
                         text:"no pain, no rain, no Maine!",
@@ -51,10 +51,11 @@ function seedDB(){
                         if(err){
                             console.log(err);
                         } else{
-                            console.log("new comment before push "+ comment)
+                            
                             campInfo.comments.push(comment);
                             campInfo.save();
-                            console.log("created new comment after push "+ comment);
+                            console.log("created new comment");
+                            
                         }
                         
                     })
